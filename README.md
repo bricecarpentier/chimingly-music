@@ -2,6 +2,20 @@
 ## Description
 Minimal, functional Audio library/player written in Node.js with Express and React.
 
+## Cloning the repo
+You can clone the repo to run the server locally.<br>
+`git clone https://github.com/amarsiingh/chimingly-music.git`<br>
+Alternatively, you can use GitHub Desktop app.
+
+## Running Chimingly Music Server
+After cloning, make sure you've installed the node package dependencies.<br>
+Then you can run the node server as follows:<br>
+`node app.js`<br>
+Chimingly Music server listens on Port `5050` of `localhost`<br>
+
+You can visit the default route to try out the web services, by typing following address in your browser:<br>
+`localhost:5050`
+
 
 ## Web Services
 **Album List** `/api/beta/albumlist`<br>
