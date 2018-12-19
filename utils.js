@@ -33,9 +33,9 @@ exports.getAWSSecret = (ask) => {
   // TODO obfuscate data, maybe use env or base64
   switch(ask) {
     case "access-id":
-      return 'AKIAJTIOOIVBOK7R4YTQ';
+      return process.env.AWS_ID;
     case "access-key":
-      return '3XLXySJKQxYh16fZKUCA/eOJtU/sY+jcbc3QhbSG';
+      return process.env.AWS_KEY;
   }
 }
 
@@ -44,5 +44,5 @@ exports.getAWSSecret = (ask) => {
  */
 exports.getLastFmKey = () => {
   // TODO obfuscate data, maybe use env or base64
-  return '205b0a29edbc5854544d3fc696c5763b';
+  return process.env.LASTFM_KEY;
 }

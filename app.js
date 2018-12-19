@@ -11,6 +11,9 @@
  var request = require('request');
  var utils = require('./utils');
 
+// We'll use dotenv to read .env vars into Node
+require('dotenv').config();
+
 // Runtime variables
  var awsAccessKeyId = utils.getAWSSecret('access-id');
  var awsSecretAccessKey = utils.getAWSSecret('access-key');
