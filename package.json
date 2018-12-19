@@ -1,0 +1,33 @@
+{
+  "name": "chimely-music",
+  "version": "1.0.0",
+  "description": "Audio library and player with Nodejs and expressjs by Amarsingh",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amarsiingh/ChimelyMusic.git"
+  },
+  "keywords": [
+    "node",
+    "music",
+    "audio-player",
+    "audio-library",
+    "stream",
+    "express",
+    "pipe"
+  ],
+  "author": "@amarsiingh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amarsiingh/ChimelyMusic/issues"
+  },
+  "homepage": "https://github.com/amarsiingh/ChimelyMusic#readme",
+  "dependencies": {
+    "aws-sdk": "^2.378.0",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}

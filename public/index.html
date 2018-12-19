@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Charm|Dancing+Script|Great+Vibes|Pacifico|Parisienne|Rochester|Satisfy|Yellowtail" rel="stylesheet">
+
+    <title> Chimingly Music Server </title>
+    <style>
+      body {
+        background: #c999ff;
+      }
+      .main-contents{
+        background: #fff;
+        padding: 20px;
+        margin: auto;
+        opacity: 0.7;
+      }
+      .main-contents .tryit-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .header-brand {
+        text-align: center;
+        color: #333333;
+        font-size: 60px;
+        font-family: 'Great Vibes', cursive;
+      }
+      .header-name {
+        text-align: center;
+        color: #2e2e2e;
+        font-size: 28px;
+        font-family: 'Charm', cursive;
+      }
+      .endpoint {
+        color: #fff;
+        background-color: #A8A8A8;
+        padding: 2px 10px;
+        font-weight: 500;
+      }
+      .endpoint-name {
+        padding: 10px 10px 0px;
+        font-weight: 700;
+      }
+      .endpoint-text {
+        padding: 2px 10px;
+        font-weight: 400;
+        color: #858585;
+      }
+      .description {
+        padding: 2px 10px;
+        color: #595959;
+      }
+      a {
+        color: #2f2f2f;
+        font-size: 18px
+      }
+      a.tryit:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a.tryit:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a.tryit:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a.tryit:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-contents">
+    <hr>
+    <div>  <div class="header-brand">Chimingly</div> <div class="header-name">Music Web Services</div> </div>
+    <hr>
+    <h2>Chimingly Music web services provides minimal, functional backend for proposed Audio library/player</h2>
+    <hr>
+
+    <table>
+
+      <tr> <td colspan="3"><div class="endpoint-name">Album List</div></td> </tr>
+      <tr>
+        <td><div class="endpoint-text">endpoint - </div></td>
+        <td><div class="endpoint">/api/beta/albumlist</div></td>
+        <td><a class="tryit" href="http://localhost:5050/api/beta/albumlist" target="_blank">Try It!</a></td>
+      </tr>
+      <tr>
+        <td colspan="3"> <div class="description">GET Album List.<br>Fetches JSON formatted Album list from Amazon S3 network storage.</div> </td>
+      </tr>
+
+      <tr> <td colspan="3"><div class="endpoint-name">Track List</div></td> </tr>
+      <tr>
+        <td><div class="endpoint-text">endpoint - </div></td>
+        <td><div class="endpoint">/api/beta/tracklist</div></td>
+        <td><a class="tryit" href="http://localhost:5050/api/beta/tracklist" target="_blank">Try It!</a></td>
+      </tr>
+      <tr>
+        <td colspan="3"> <div class="description">GET Track List.<br>Fetches JSON formatted Track list from Amazon S3 network storage.</div> </td>
+      </tr>
+
+      <tr> <td colspan="3"><div class="endpoint-name">Track Metadata</div></td> </tr>
+      <tr>
+        <td><div class="endpoint-text">endpoint - </div></td>
+        <td><div class="endpoint">/api/beta/trackmetadata</div></td>
+        <td><a class="tryit" href="http://localhost:5050/api/beta/trackmetadata" target="_blank">Try It!</a></td>
+      </tr>
+      <tr>
+        <td colspan="3"> <div class="description">GET Track Metadata.<br>Attempts to request and return Track information metadata for a track on Last.fm using the artist/track name.</div> </td>
+      </tr>
+
+      <tr> <td colspan="3"><div class="endpoint-name">Album detail</div></td> </tr>
+      <tr>
+        <td><div class="endpoint-text">endpoint - </div></td>
+        <td><div class="endpoint">/api/beta/album</div></td>
+        <td><a class="tryit" href="http://localhost:5050/api/beta/album" target="_blank" disabled>Try It!</a></td>
+      </tr>
+      <tr>
+        <td colspan="3"> <div class="description">GET Album Detail.<br>Fetches Album details, such as track list etc. of the requested album.</div> </td>
+      </tr>
+
+      <tr> <td colspan="3"><div class="endpoint-name">Play Track</div></td> </tr>
+      <tr>
+        <td><div class="endpoint-text">endpoint - </div></td>
+        <td><div class="endpoint">/api/beta/playtrack</div></td>
+        <td><a class="tryit" href="http://localhost:5050/api/beta/playtrack" target="_blank" disabled>Try It!</a></td>
+      </tr>
+      <tr>
+        <td colspan="3"> <div class="description">GET Play Track.<br>Stream requested Audio Track from Amazon S3 network storage.</div> </td>
+      </tr>
+    </table>
+  </body>
+</html>
